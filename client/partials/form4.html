@@ -1,0 +1,86 @@
+<div class = "container" ng-controller="usersController">
+	<div class="background"></div>
+
+	<!-- Begin Header -->
+	<div class="process-header">
+		<div class = 'row half-divider'></div>
+		<div class="row">
+		<div class="col-sm-1"></div>
+		<div class="col-sm-5 header-logo">
+		<a class="navbar-brand" href="#/">
+		<img style="width:60%; height:auto;" src="/images/logo2.png">
+		</a>
+		</div>
+
+		<div class="col-sm-5 header-logo">
+			<img style="width:90%; height:auto;" src="/images/step_3.png">
+		</div>
+
+		</div>
+	</div>
+	<!-- End Header -->
+	<div class = 'row divider'></div>
+
+	<div id = "form-four">
+		<div class="col-md-6">
+			<h4 style="font-size: 30px;font-weight: 200;line-height: 36px;">A perfect way to increase your score regardless of your current credit standing.</h4>
+			<p class="text">Activate your monthly rent reporting service and see your rental information appear on your credit report for FREE within 15 DAYS!</p>
+			<p class="text">A monthly fee of $12.95 will be charged for ongoing servicing and reporting of your account.</p>
+		</div>
+
+		<div class="col-md-6">
+			<form>
+			<h2 class="form-header-two">Payment Information <img height="25px" src="https://www.rentreporters.com/assets/images/visa-mastercard-discover-logo.jpg"></h2>
+
+			<h2 style="text-decoration: underline;font-size: 18px; font-weight: 200">Card Details</h2>
+				<div class="form-group-row">
+					<div class="col-sm-6">
+						<label>NAME ON THE CARD</label>
+						<input type="text" placeholder="Name on the card">
+					</div>
+					<div class="col-sm-6">
+						<label>CARD NO</label>
+						<input type="text" placeholder="0000-0000-0000-0000">
+					</div>
+				</div>
+				<br>
+				<br>
+			<h2 style="text-decoration: underline;font-size: 18px; font-weight: 200">Billing Address</h2>
+				<div class="checkbox col-sm-12">
+					<input type="checkbox">Billing address same as Rental Address?
+				</div>
+				<br>
+				<br>
+				<br>
+				<div class="form-group row">
+					<div class="col-sm-6">
+						<label>ADDRESS 1</label>
+						<input type="text" class="form-control" ng-model="userRentalInformation.addressOne">
+					</div>
+					<div class="col-sm-6">
+						<label>ADDRESS 2</label>
+						<input type="text" class="form-control" ng-model="userRentalInformation.addressTwo">
+					</div>
+				</div>
+				<div class="form-group row">
+					<div class="col-sm-5">
+						<label>CITY</label>
+						<input type="text" class="form-control" ng-model="userRentalInformation.city">
+					</div>
+					<div class="col-sm-5">
+						<label>STATE</label>
+						<input type="text" class="form-control" ng-model="userRentalInformation.state">
+					</div>
+					<div class="col-sm-2">
+						<label>ZIP</label>
+						<input type="text" class="form-control" ng-model="userRentalInformation.zip">
+					</div>
+				</div>
+				<br>
+				<br>
+				<br>
+				<center><button class="btn-theme" style="width:150px;" ng-click="addRentalInformation()">NEXT</button></center>
+			</form>
+		</div>
+	</div>
+</div>

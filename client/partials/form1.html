@@ -1,0 +1,144 @@
+<div class = "container" ng-controller = "usersController">
+		<div id = "header" class="nav navbar-fixed-top"> <!-- Begin Header -->
+			<!-- Logo Here -->
+			<div id="top-header" class="row">
+				<img src="images/rr_logo.png">
+			</div>
+			<!-- Links to partials here -->
+			<div id = "header-nav-menu">
+				<nav class = "collapse navbar-collapse">
+					<ul class="nav navbar-nav">
+						<li><a href="#/">Home</a></li>
+						<li><a href="#/about">About</a></li>
+						<li><a href="#/contact">Contact</a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+
+	<div id = "text-form-box" class = "row">
+	<div class = 'row divider'></div>
+	<div class="col-md-1"></div>
+	<div id="textDescription" class = 'col-md-6'>
+		<!-- words go here -->
+		<h2>Build a Strong Credit Report and Credit Score By Reporting Your Monthly Rental Payments.</h2>
+		<h3>Give your credit report a boost by reporting up to 24 months of PREVIOUS rental payments on day one of service.</h3>
+		<h3>See the results on your credit report for free now!</h3>
+	</div>
+	<div id = "formOne" class = 'col-md-3'>
+		<h5>SEE HOW MUCH CREDIT YOU CAN GET!</h5>
+		<form>
+			<label>HOW MUCH IS YOUR MONTHLY PAYMENT?</label>
+			<input type="text" placeholder="$0.00" class="form-control" ng-model="newUserInfo.rentalCostPerMonth">
+			<br>
+			<label>WHEN DID YOU MOVE IN?</label>
+			<div class="row">
+				<div class='col-md-6'>
+					<select class="form-control" ng-model="newUserInfo.moveInMonth">
+						<!-- <option value='0'>Month</option> -->
+						<option value='0'>January</option>
+						<option value='1'>February</option>
+						<option value='2'>March</option>
+						<option value='3'>April</option>
+						<option value='4'>May</option>
+						<option value='5'>June</option>
+						<option value='6'>July</option>
+						<option value='7'>August</option>
+						<option value='8'>September</option>
+						<option value='9'>October</option>
+						<option value='10'>November</option>
+						<option value='11'>December</option>
+					</select>
+				</div>
+				<div class='col-md-4'>
+					<select class="form-control" ng-model="newUserInfo.moveInYear">
+						<!-- <option>Year</option> -->
+						<option value='2016'>2016</option>
+						<option value='2015'>2015</option>
+						<option value='2014'>2014</option>
+						<option value='2013'>2013</option>
+						<option value='2012'>2012</option>
+						<option value='2011'>2011</option>
+						<option value='2010'>2010</option>
+						<option value='2009'>2009</option>
+						<option value='2008'>2008</option>
+						<option value='2007'>2007</option>
+						<option value='2006'>2006</option>
+						<option value='2005'>2005</option>
+					</select>
+				</div>
+			</div>
+			<h3>15 day FREE Trial</h3>
+			<button class="btn-theme" ng-click="addUserInformation()">Calculate</button>
+		</form>
+	</div>
+</div>
+	<div>
+	<div id = "threesteps" class="col-sm-9 no-float center-block">
+		<h3>Credit Reporting in 3 easy steps</h3>
+		<!-- <div class = "row"> -->
+			
+			<div class="col-md-3 three-steps">
+				<br><br>
+				<h3>Residents</h3>
+				<br><br><br>
+				<h4>Activate a free trial account by providing some basic rental information</h4>
+			</div>
+			<div class="col-md-1"></div>
+			<div class="col-md-4 three-steps">
+				<br><br>
+				<h3>RentReporters</h3>
+				<br><br><br>
+				<h4>Your rental payment history is placed onto your consumer credit report withing 15 days.</h4>
+			</div>
+			<div class="col-md-1"></div>
+			<div class="col-md-3 three-steps">
+				<br><br>
+				<h3>Credit Bereau</h3>
+				<br><br><br>
+				<h4>Adds a traditional payment tradeline to your national consumer credit file.</h4>
+			</div>
+		
+		<!-- </div> -->
+	</div>
+	</div>
+
+	<div class="slidethree">
+		<div class = "col-sm-9 service-container center-block">
+			<div class = 'row divider'></div>
+			<!-- <div class="col-sm-1"></div> -->
+			<div class="col-sm-3 text-center">
+				<img class = "banner" src="images/ok-icon.png">
+				<h5>Bureau Proven Formula</h5>
+				<p>We are a Trusted Data Provider to the bureau with years of proven results.</p>
+			</div>
+			<div class="col-sm-3 text-center">
+				<img class = "banner" src="images/credit-icon.png">
+				<h5>Consumer Credit Report</h5>
+				<p>The RentReporters data will appear right on your national consumer credit report.</p>
+			</div>
+			<div class="col-sm-3 text-center">
+				<img class = "banner" src="images/automated-icon.png">
+				<h5>Automated Request System</h5>
+				<p>RentReporters is completely automated, secure and requires no change in how you pay rent now.</p>
+			</div>
+			<!-- <div class="col-sm-1"></div> -->
+			<div class="col-sm-3 text-center">
+				<img class = "banner" src="images/wallet-icon.png">
+				<h5>Prove Ability to Pay</h5>
+				<p>Adding a rental account to your credit report demonstrates your ability to pay a large payment on-time every month.</p>
+			</div>
+			<div class="col-sm-3 text-center">
+				<img class = "banner" src="images/health-icon.png">
+				<h5>Credit Report Health</h5>
+				<p>RentReporters helps you establish credit within days, not months or years. You can build, re-build, or re-establish credit using your largest payment.</p>
+			</div>
+			<div class="col-sm-3 text-center">
+				<img class = "banner" src="images/credit-icon.png">
+				<h5>Credit Score Factors</h5>
+				<p>A RentReporters account can impact up to 50% of your credit score by reporting your good paying account with up to 24 months of previous payment history on day one of service.</p>
+			</div>
+			</div>
+			<center><a class = "btn-theme btn-theme-padding" href="#/">Enroll Free Now</a></center>
+		</div>
+</div>

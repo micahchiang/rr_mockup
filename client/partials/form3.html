@@ -1,0 +1,96 @@
+<div class="container" ng-controller="usersController">
+	<div class="background"></div>
+
+	<!-- Begin Header -->
+	<div class="process-header">
+		<div class = 'row half-divider'></div>
+		<div class="row">
+		<div class="col-sm-1"></div>
+		<div class="col-sm-5 header-logo">
+		<a class="navbar-brand" href="#/">
+		<img style="width:60%; height:auto;" src="/images/logo2.png">
+		</a>
+		</div>
+
+		<div class="col-sm-5 header-logo">
+			<img style="width:90%; height:auto;" src="/images/step_2.png">
+		</div>
+
+		</div>
+	</div>
+	<!-- End Header -->
+	<div class = 'row divider'></div>
+
+	<div id="form-three">
+		<div class ="inner">
+		<form>
+			<h2 class="form-header-two">Account Profile</h2>
+				<div class="form-group row">
+					<div class="col-sm-6">
+						<label>DATE OF BIRTH</label>
+						<input type="text" class="form-control" placeholder="MM-DD-YYYY" ng-model="userRentalInformation.birthday">
+					</div>
+					<div class="col-sm-6">
+						<label>PHONE NUMBER</label>
+						<input type="text" class="form-control" ng-model="userRentalInformation.phone">
+					</div>
+				</div>
+				<br>
+			<h2 class="form-header-two">Rental Address</h2>
+				<div class="form-group row">
+					<div class="col-sm-6">
+						<label>ADDRESS 1</label>
+						<input type="text" class="form-control" ng-model="userRentalInformation.addressOne">
+					</div>
+					<div class="col-sm-6">
+						<label>ADDRESS 2</label>
+						<input type="text" class="form-control" ng-model="userRentalInformation.addressTwo">
+					</div>
+				</div>
+				<div class="form-group row">
+					<div class="col-sm-5">
+						<label>CITY</label>
+						<input type="text" class="form-control" ng-model="userRentalInformation.city">
+					</div>
+					<div class="col-sm-5">
+						<label>STATE</label>
+						<input type="text" class="form-control" ng-model="userRentalInformation.state">
+					</div>
+					<div class="col-sm-2">
+						<label>ZIP</label>
+						<input type="text" class="form-control" ng-model="userRentalInformation.zip">
+					</div>
+				</div>
+				<br>
+				<h2 class="form-header-two">LANDLORD PROFILE</h2>
+					<div class="form-group row">
+						<div class="col-sm-12">
+							<label>LANDLORD/PROPERTY MANAGER COMPANY NAME</label>
+							<input type="text" class="form-control" placeholder="LANDLORD/PROPERTY MANAGER COMPANY NAME" ng-model="userRentalInformation.landlordCompanyName" ng-required='!userRentalInformation.landlordPhoneNumber'>
+						</div>
+					</div>
+					<br>
+					<center><label>OR</label></center>
+					<br>
+					<div class="form-group row">
+						<div class="col-sm-6">
+							<label>FIRST NAME</label>
+							<input type="text" class="form-control" placeholder="Landlord First Name" ng-model="userRentalInformation.landlordFirstName" ng-required="!userRentalInformation.landlordCompanyName">
+						</div>
+						<div class="col-sm-6">
+							<label>LAST NAME</label>
+							<input type="text" class="form-control" placeholder="Landlord Last Name" ng-model="userRentalInformation.landlordLastName" ng-required="!userRentalInformation.landlordCompanyName">
+						</div>
+					</div>
+					<div class="form-group row">
+						<div class="col-sm-6">
+							<label>PHONE NUMBER</label>
+							<input type="text" class="form-control" placeholder="Landlord Phone Number" ng-model="userRentalInformation.landlordPhoneNumber" ng-required="!userRentalInformation.landlordCompanyName">
+						</div>
+					</div><br><br>
+					<center><button class="btn-theme" style="width:150px;" ng-click="addRentalInformation()">NEXT</button></center>
+		</form>
+		</div>
+	</div>
+
+</div>

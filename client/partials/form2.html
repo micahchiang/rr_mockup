@@ -1,0 +1,76 @@
+<div class = "container" ng-controller = "usersController">
+	<div class="background"></div>
+	<!-- Begin Header -->
+	<div class="process-header">
+		<div class = 'row half-divider'></div>
+		<div class="row">
+		<div class="col-sm-1"></div>
+		<div class="col-sm-5 header-logo">
+		<a class="navbar-brand" href="#/">
+		<img style="width:60%; height:auto;" src="/images/logo2.png">
+		</a>
+		</div>
+
+		<div class="col-sm-5 header-logo">
+			<img style="width:90%; height:auto;" src="/images/step_1.png">
+		</div>
+
+		</div>
+	</div>
+	<!-- End Header -->
+	<div class = 'row divider'></div>
+
+	<div id="form-two">
+	
+
+	<div class = "row">
+		<h2 style="text-align: center;font-size: 36px;font-weight: 100;color:#4c4c4c;">Over the last <span>{{userInfo.totalMonthsToDate}}</span>  months you have paid $<span>{{userInfo.totalRentToDate}}</span> in rent.</h2>
+		<div class="col-md-1"></div>
+		<div class="col-md-6">
+			<h4 style="font-size: 24px;font-weight: 200;line-height: 36px;">Boost your credit report and score by adding your previous rental payments today!</h4>
+			<ul class="infos">
+				<li>See this months payment on your credit report for FREE</li>
+				<li>Report ongoing future payments for only $12.95/mo.</li>
+				<li>No long term commitment, cancel anytime.</li>
+			</ul>
+		</div>
+
+		<div class="col-md-4">
+			<form class="form">
+				<div class = "form-group">
+				<label>FIRST NAME</label>
+				<input type="text" placeholder="First Name" ng-model="userNameEmail.firstName">
+				</div>
+				<div class="form-group">
+				<label>LAST NAME</label>
+				<input type="text" placeholder="Last Name" ng-model="userNameEmail.lastName">
+				</div>
+				<div class="form-group">
+				<label>EMAIL</label><br>
+				<input type="text" placeholder="Email" ng-model="userNameEmail.email">
+				</div>
+				<div class="form-group checkbox">
+				<input type="checkbox"><label>By clicking next, I accept the <a style="color: #21d382">terms of use</a> and conditions</label>
+				</div>
+				<button class = "btn-theme btn-theme-padding" ng-click="addUserNameEmail()">NEXT</button>
+			</form>
+		</div>
+	</div>
+
+	<div class = 'row half-divider'></div>
+
+	<div class="row">
+			<div class="col-md-1"></div>
+			<div class="col-md-5">
+				<h3>Your payment history makes up 35% of your credit score</h3>
+				<p class ="text">RentReporters will help you build positive payment history by posting on time rent payments to your credit report. See results before your card is charged.<p>
+			</div>
+			<div class="col-md-6">
+				<div class="text-center">
+					<img style="width:40%; height: auto;" src="https://www.rentreporters.com/assets/rrNew2/img/payment-history.png">
+				</div>
+			</div>
+	</div>
+</div>
+
+</div>

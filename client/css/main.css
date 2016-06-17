@@ -1,0 +1,312 @@
+
+@import '//fonts.googleapis.com/css?family=Roboto:400,300,700';
+
+html, body, div, span, applet, object, iframe,
+ p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	font-family: 'Roboto', Arial, sans-serif;
+}
+
+#wrapper{
+	width: 100%;
+	height: auto;
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    -webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+
+#header{
+	/*border: 1px solid black;*/
+	/*background-color: white;*/
+	height: 91px;
+}
+	#top-header{
+		padding-bottom: 20px;
+		background-color: white;
+	}
+	#header img {
+		/*border: 1px solid black;*/
+		padding-top: 15px;
+		padding-left: 100px;
+	}
+	#header-nav-menu {
+		/*border: 1px solid black;*/
+	}
+	#header-nav-menu ul {
+		padding-left: 100px;
+		width: 100%;
+		background-color: rgba(114,122,123,.7);
+		height: 35px;
+		/*border: 1px solid black;*/
+	}
+	#header-nav-menu ul li a{
+		color: white;
+		height: 35px;
+		vertical-align: top;
+	}
+
+.container {
+	/*border: 1px solid black;*/
+	min-height: 600px;
+	width: 100%;
+}
+	#threesteps{
+		/*border: 1px solid black;*/
+		min-height: 350px;
+		background: url('/images/3_steps.png') no-repeat center;
+		background-size: 50%;
+		text-align: center;
+	}
+	.three-steps{
+		/*border: 1px solid blue;*/
+		height: 250px;
+	}
+	.center-block{
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		float: none !important;
+	}
+
+
+#footer{
+	/*border: 1px solid black;*/
+	height: 200px;
+	display: block;
+	/*display: inline-block;*/
+	margin-top: 5px;
+	/*background: url("https://www.rentreporters.com/assets/rrNew2/img/as_seen.png") no-repeat center;*/
+	background-size: 75%;
+}
+	#footer h3{
+		text-align: center;
+		padding-top: 20px;
+	}
+
+#text-form-box{
+	border: 1px solid black;
+	min-height: 600px;
+	/*margin-top: 20px;*/
+	background: url('https://www.rentreporters.com/assets/rrNew2/img/lphero.jpg') no-repeat center;
+	background-size: cover;
+}
+	.divider{
+		/*border: 1px solid black;*/
+		height: 100px;
+	}
+	.half-divider{
+		height: 20px;
+	}
+
+#textDescription{
+	/*border: 1px solid black;*/
+	height: 400px;
+	padding-left: 10px;
+	color: white;
+	font-weight: lighter;
+}
+	#textDescription h2 {
+		padding-top: 100px;
+	}
+	#formOne {
+		color: white;
+		/*border: 1px solid white;*/
+		height: 320px;
+		text-align: center;
+	    border: 1px solid #FFF;
+	    box-shadow: inset 0 0 10px 10px rgba(255, 255, 255, 0.12);
+	    /*padding: 40px;*/
+	    position: relative;
+	    margin-top: 40px;
+	}
+		#formOne .btn-theme{
+		    width: 207px;
+		    position: absolute;
+		    left: 50%;
+		    bottom: -25px;
+		    margin-left: -104px;
+		}
+	#formOne h5{
+		padding-top: 30px;
+	}
+	#formOne label{
+		font-size: 12px;
+	}
+	#formOne select{
+		width: 100px;
+	}
+	.btn-theme {
+    background: #21d382;
+    border: 1px solid #21d382;
+    box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.5);
+    text-transform: uppercase;
+    color: #FFF;
+    height: 51px;
+    font-size: 18px;
+}
+	.btn-theme-padding {
+    padding: 10px 50px;
+}
+
+.slidethree{
+	background: #f2f2f2;
+	/*min-height: 650px;*/
+	width: 100%;
+	height: auto;
+	display: block;
+}
+	.service-container{
+		height: 100%;
+		padding-left: 100px;
+		/*border: 1px solid black;*/
+	}
+	.col-sm-3{
+		/*border: 1px solid blue;*/
+		height: 200px;
+		margin: 10px;
+		/*width: auto;*/
+		/*margin: 0 auto;*/
+	}
+		.col-sm-3 h5{
+			padding-top: 3px;
+			font-weight: bold;
+		}
+	.banner {
+		padding-top: 10px;
+	}
+@media (min-width: 768px){
+.col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12 {
+    float: left;
+}
+}
+@media (min-width: 768px){
+.col-sm-4 {
+    width: 33.3333%;
+}}
+
+/*FORM 2*/
+.background {
+    background: url("/images/lphero.jpg") no-repeat center;
+    background-size: cover;
+    min-height: 600px;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.process-header{
+	/*border: 1px solid green;*/
+	height: 100px;
+	box-sizing: border-box;
+}
+.header-logo{
+	/*border: 1px solid white;*/
+	margin: 0 auto;
+}
+#form-two{
+	border: 1px solid white;
+	height: 700px;
+	width: 80%;
+	margin: 0 auto;
+    background: #f5f5f5
+}
+	#form-two input{
+		width: 270px;
+	}
+.infos{
+	font-size: 18px;
+    line-height: 43px;
+    font-weight: 100;
+    list-style: none;
+}
+.infos li:before {
+    content: " ";
+    background-color: #21d382;
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+    display: inline-block;
+    margin-left: 0px;
+    margin-right: 15px;
+}
+
+.checkbox {
+    display: block;
+    min-height: 20px;
+    padding-left: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.form{
+	border: 1px solid #b7b7b7;
+    padding: 25px;
+    position: relative;
+}
+.text {
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 100;
+    margin-bottom: 20px;
+}
+
+/*FORM THREE*/
+#form-three{
+	border: 1px solid white;
+	height: 900px;
+	width: 60%;
+	margin: 0 auto;
+    background: #f5f5f5;
+    padding: 60px;
+}
+	.form-header-two{
+    font-size: 18px;
+    padding: 0px 0 15px 0;
+    border-bottom: 2px solid #b7b7b7;
+    margin-bottom: 20px;
+    height: auto;
+    line-height: 015px;
+}
+
+/*FORM FOUR*/
+#form-four{
+	border: 1px solid white;
+	height: 600px;
+	width: 85%;
+	margin: 0 auto;
+    background: #f5f5f5;
+    padding: 60px;	
+}
+	
