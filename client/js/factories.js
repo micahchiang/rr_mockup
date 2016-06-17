@@ -2,6 +2,7 @@ rentReporters.factory('userFactory', function(){
 	var factory = {};
 	var userInfo = {};
 
+
 	factory.updateUserInformation = function(info, callback){
 		var d = new Date();
 		var m = d.getMonth();

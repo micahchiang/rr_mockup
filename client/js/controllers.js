@@ -1,6 +1,7 @@
 rentReporters.controller('usersController', function($scope, userFactory, $location){
 
 	$scope.addUserInformation = function(){
+		
 		var newUserInformation = $scope.newUserInfo;
 		userFactory.updateUserInformation(newUserInformation, function(){
 			console.log("success!");
@@ -35,5 +36,4 @@ rentReporters.controller('usersController', function($scope, userFactory, $locat
 		})
 	}
 	getUserInformation();
-
 });

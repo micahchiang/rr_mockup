@@ -29,13 +29,13 @@
 		<h5>SEE HOW MUCH CREDIT YOU CAN GET!</h5>
 		<form>
 			<label>HOW MUCH IS YOUR MONTHLY PAYMENT?</label>
-			<input type="text" placeholder="$0.00" class="form-control" ng-model="newUserInfo.rentalCostPerMonth">
+			<input type="text" placeholder= "$0.00" class="form-control" ng-model="newUserInfo.rentalCostPerMonth">
 			<br>
 			<label>WHEN DID YOU MOVE IN?</label>
 			<div class="row">
 				<div class='col-md-6'>
 					<select class="form-control" ng-model="newUserInfo.moveInMonth">
-						<!-- <option value='0'>Month</option> -->
+						<!-- <option selected="selected">{{userInfo.moveInMonthName}}</option> -->
 						<option value='0'>January</option>
 						<option value='1'>February</option>
 						<option value='2'>March</option>
@@ -52,7 +52,7 @@
 				</div>
 				<div class='col-md-4'>
 					<select class="form-control" ng-model="newUserInfo.moveInYear">
-						<!-- <option>Year</option> -->
+						<!-- <option selected="selected">{{userInfo.moveInYear}}</option> -->
 						<option value='2016'>2016</option>
 						<option value='2015'>2015</option>
 						<option value='2014'>2014</option>

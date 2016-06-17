@@ -103,11 +103,14 @@ time, mark, audio, video {
 #footer{
 	/*border: 1px solid black;*/
 	height: 200px;
-	display: block;
+	/*display: block;*/
 	/*display: inline-block;*/
 	margin-top: 5px;
 	/*background: url("https://www.rentreporters.com/assets/rrNew2/img/as_seen.png") no-repeat center;*/
 	background-size: 75%;
+	position: relative;
+	bottom:0;
+	width: 100%;
 }
 	#footer h3{
 		text-align: center;
